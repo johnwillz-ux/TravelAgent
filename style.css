@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.row {
+  width: 90%;
+  margin: auto;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+  font-family: "Piazzolla", serif;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-family: "Piazzolla", serif;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 4.8rem;
+  font-family: "Piazzolla", serif;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: "Piazzolla", serif;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+  font-family: "Piazzolla", serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: #4c6e97;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+button:hover {
+  background-color: #213f63;
+}
+
+/* NAV AND HERO SETION */
+#logo {
+  font-family: "Pacifico", cursive;
+  flex: 1 1 40rem;
+  font-weight: normal;
+}
+.main-head {
+  background-color: #131c27;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  min-height: 10vh;
+  padding: 2rem;
+  color: white;
+  flex-wrap: wrap;
+}
+
+nav,
+ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav,
+li {
+  padding: 0 1rem;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.39)),
+    url(/img/landing-page.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 90vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h3 {
+  padding: 5rem;
+}
+
+/* BENEFIT SECTION  */
+#location {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.13)),
+    url(/img/new-york-page.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.location-head h2 {
+  padding: 1rem 0rem;
+}
+.location-head h3 {
+  padding: 4rem 0rem;
+}
+
+.cloud {
+  width: 1200px;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+.moving-cloud1 {
+  top: 20%;
+  opacity: 0.5;
+  z-index: -1;
+  animation: cloudmove 6.5s infinite alternate ease-in-out;
+}
+.moving-cloud2 {
+  animation: cloudmove 5.5s infinite alternate ease-in-out;
+}
+
+/* BENEFIT SECTION */
+
+.benefit-head {
+  background-color: #131c27;
+  color: white;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.icon img {
+  width: 100px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  min-height: 75vh;
+  flex-wrap: wrap;
+}
+
+.icon {
+  min-height: 30vh;
+  margin: 2rem 5rem;
+  flex: 1 1 25rem;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px #213f636b;
+  text-align: center;
+  transition: box-shadow 0.5s;
+}
+
+.icon:hover {
+  box-shadow: 0px 10px 20px #213f63da;
+}
+
+.card-icon {
+  background-color: #4c6e97;
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.card-icon:hover {
+  background-color: #1e3149;
+}
+
+.card-icon,
+h4,
+p {
+  padding: 2rem;
+}
+
+/* CONTACT PART */
+
+#contact-sec {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.075)),
+    url(/img/contact-mountain.png);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.formwrap {
+  color: white;
+  background-color: #131c2791;
+  width: 60%;
+  border-radius: 10px;
+}
+
+.contact {
+  text-align: center;
+  padding: 3rem;
+}
+.nameform,
+.mailform {
+  text-align: center;
+  padding: 3rem;
+}
+form button {
+  text-align: center;
+  width: 100%;
+}
+label {
+  padding-right: 10px;
+}
+
+input {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border-style: none;
+}
+
+/* THE FOOTER */
+
+.footer-sec {
+  display: flex;
+  background-color: #131c27;
+  min-height: 10vh;
+  color: white;
+  align-items: center;
+}
+
+.footerall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerall,
+h1 {
+  padding-top: 1rem;
+}
+
+.socials,
+img {
+  padding: 0.5rem 1rem;
+}
+
+@keyframes cloudmove {
+  from {
+    transform: translate(10%, -10%);
+  }
+
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* RESPONSIVE PART */
+
+@media screen and (max-width: 910px) {
+  html {
+    font-size: 50%;
+  }
+
+  .locationh3 {
+    background-color: #131c2794;
+    color: white;
+    width: 100%;
+  }
+
+  .main-head {
+    text-align: center;
+  }
+
+  #location {
+    background-position: center;
+  }
+  .cloud {
+    width: 650px;
+  }
+  .moving-cloud1 {
+    animation: cloudmove 3.5s infinite alternate ease-in-out;
+    top: 7%;
+  }
+  .moving-cloud2 {
+    animation: cloudmove 4.5s infinite alternate ease-in-out;
+    z-index: -1;
+  }
+
+  /* CONTACT */
+  .formwrap {
+    width: 80%;
+    border-radius: 10px;
+  }
+  input {
+    padding: 1rem 1rem;
+  }
+  .footerall {
+    justify-content: center;
+    text-align: center;
+  }
+}
